@@ -12,20 +12,21 @@ int main()
     int big{};
     int small{};
     std::cout << "Enter an integer: ";
-    std::cin >> big;
+    std::cin  >> small;
     std::cout << "Enter a larger integer: ";
-    std::cin >> small;
+    std::cin  >> big;
 
     {
         if (small == max(big, small))
         {
-            int temp{big};          // the born of temp
+            const int temp{big};          // the born of temp
             big = small;
             small = temp;
-        }                           // the death of temp
+            std::cout<<"Swaping the values\n";
+        }                                 // the death of temp
     }
     std::cout << "The smaller value is " << small << "\n";
-    std::cout << "The larger value is " << big << "\n";
+    std::cout << "The larger value is "  << big   << "\n";
 
     return 0;
 }
