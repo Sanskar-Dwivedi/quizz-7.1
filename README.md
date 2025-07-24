@@ -5,7 +5,11 @@ Write a program that asks the user to enter two integers, one named smaller, the
 The program output should match the following:
 
 Enter an integer: 4
+
 Enter a larger integer: 2
+
 Swapping the values
+
 The smaller value is 2
+
 The larger value is 4
